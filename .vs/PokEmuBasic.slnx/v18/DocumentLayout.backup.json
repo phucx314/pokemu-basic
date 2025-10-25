@@ -1,0 +1,411 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\MOCK PROJECTS\\PokEmuBasic\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{851E606F-7D36-D6CF-6CF9-588860CD04FE}|PokEmuBasic\\PokEmuBasic.csproj|d:\\mock projects\\pokemubasic\\pokemubasic\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851E606F-7D36-D6CF-6CF9-588860CD04FE}|PokEmuBasic\\PokEmuBasic.csproj|solutionrelative:pokemubasic\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F12952-524A-45AF-9BE1-B65B31A4FC82}|PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj|d:\\mock projects\\pokemubasic\\pokemubasic.infrastructure\\pokemubasic.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{25F12952-524A-45AF-9BE1-B65B31A4FC82}|PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj|solutionrelative:pokemubasic.infrastructure\\pokemubasic.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F12952-524A-45AF-9BE1-B65B31A4FC82}|PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj|d:\\mock projects\\pokemubasic\\pokemubasic.infrastructure\\ioc\\di.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25F12952-524A-45AF-9BE1-B65B31A4FC82}|PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj|solutionrelative:pokemubasic.infrastructure\\ioc\\di.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F12952-524A-45AF-9BE1-B65B31A4FC82}|PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj|d:\\mock projects\\pokemubasic\\pokemubasic.infrastructure\\database\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25F12952-524A-45AF-9BE1-B65B31A4FC82}|PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj|solutionrelative:pokemubasic.infrastructure\\database\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851E606F-7D36-D6CF-6CF9-588860CD04FE}|PokEmuBasic\\PokEmuBasic.API.csproj|d:\\mock projects\\pokemubasic\\pokemubasic\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{851E606F-7D36-D6CF-6CF9-588860CD04FE}|PokEmuBasic\\PokEmuBasic.API.csproj|solutionrelative:pokemubasic\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F12952-524A-45AF-9BE1-B65B31A4FC82}|PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj|d:\\mock projects\\pokemubasic\\pokemubasic.infrastructure\\enitiesconfig\\baseentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25F12952-524A-45AF-9BE1-B65B31A4FC82}|PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj|solutionrelative:pokemubasic.infrastructure\\enitiesconfig\\baseentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F12952-524A-45AF-9BE1-B65B31A4FC82}|PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj|d:\\mock projects\\pokemubasic\\pokemubasic.infrastructure\\enitiesconfig\\cardconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25F12952-524A-45AF-9BE1-B65B31A4FC82}|PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj|solutionrelative:pokemubasic.infrastructure\\enitiesconfig\\cardconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851E606F-7D36-D6CF-6CF9-588860CD04FE}|PokEmuBasic\\PokEmuBasic.API.csproj|d:\\mock projects\\pokemubasic\\pokemubasic\\pokemubasic.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{851E606F-7D36-D6CF-6CF9-588860CD04FE}|PokEmuBasic\\PokEmuBasic.API.csproj|solutionrelative:pokemubasic\\pokemubasic.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0E93EFF-BC4E-4E5D-B177-78B1FD4B980C}|PokEmuBasic.Application\\PokEmuBasic.Application.csproj|d:\\mock projects\\pokemubasic\\pokemubasic.application\\repositories\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0E93EFF-BC4E-4E5D-B177-78B1FD4B980C}|PokEmuBasic.Application\\PokEmuBasic.Application.csproj|solutionrelative:pokemubasic.application\\repositories\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0E93EFF-BC4E-4E5D-B177-78B1FD4B980C}|PokEmuBasic.Application\\PokEmuBasic.Application.csproj|d:\\mock projects\\pokemubasic\\pokemubasic.application\\pokemubasic.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A0E93EFF-BC4E-4E5D-B177-78B1FD4B980C}|PokEmuBasic.Application\\PokEmuBasic.Application.csproj|solutionrelative:pokemubasic.application\\pokemubasic.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F12952-524A-45AF-9BE1-B65B31A4FC82}|PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj|d:\\mock projects\\pokemubasic\\pokemubasic.infrastructure\\enitiesconfig\\usercardconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25F12952-524A-45AF-9BE1-B65B31A4FC82}|PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj|solutionrelative:pokemubasic.infrastructure\\enitiesconfig\\usercardconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBB4736B-D9D8-466B-BB3B-4CEDF57E8144}|PokEmuBasic.Domain\\PokEmuBasic.Domain.csproj|d:\\mock projects\\pokemubasic\\pokemubasic.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBB4736B-D9D8-466B-BB3B-4CEDF57E8144}|PokEmuBasic.Domain\\PokEmuBasic.Domain.csproj|solutionrelative:pokemubasic.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBB4736B-D9D8-466B-BB3B-4CEDF57E8144}|PokEmuBasic.Domain\\PokEmuBasic.Domain.csproj|d:\\mock projects\\pokemubasic\\pokemubasic.domain\\entities\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBB4736B-D9D8-466B-BB3B-4CEDF57E8144}|PokEmuBasic.Domain\\PokEmuBasic.Domain.csproj|solutionrelative:pokemubasic.domain\\entities\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBB4736B-D9D8-466B-BB3B-4CEDF57E8144}|PokEmuBasic.Domain\\PokEmuBasic.Domain.csproj|d:\\mock projects\\pokemubasic\\pokemubasic.domain\\entities\\usercard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBB4736B-D9D8-466B-BB3B-4CEDF57E8144}|PokEmuBasic.Domain\\PokEmuBasic.Domain.csproj|solutionrelative:pokemubasic.domain\\entities\\usercard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F12952-524A-45AF-9BE1-B65B31A4FC82}|PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj|d:\\mock projects\\pokemubasic\\pokemubasic.infrastructure\\enitiesconfig\\rarityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25F12952-524A-45AF-9BE1-B65B31A4FC82}|PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj|solutionrelative:pokemubasic.infrastructure\\enitiesconfig\\rarityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F12952-524A-45AF-9BE1-B65B31A4FC82}|PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj|d:\\mock projects\\pokemubasic\\pokemubasic.infrastructure\\enitiesconfig\\packraritydroprateconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25F12952-524A-45AF-9BE1-B65B31A4FC82}|PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj|solutionrelative:pokemubasic.infrastructure\\enitiesconfig\\packraritydroprateconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBB4736B-D9D8-466B-BB3B-4CEDF57E8144}|PokEmuBasic.Domain\\PokEmuBasic.Domain.csproj|d:\\mock projects\\pokemubasic\\pokemubasic.domain\\entities\\pack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBB4736B-D9D8-466B-BB3B-4CEDF57E8144}|PokEmuBasic.Domain\\PokEmuBasic.Domain.csproj|solutionrelative:pokemubasic.domain\\entities\\pack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBB4736B-D9D8-466B-BB3B-4CEDF57E8144}|PokEmuBasic.Domain\\PokEmuBasic.Domain.csproj|d:\\mock projects\\pokemubasic\\pokemubasic.domain\\entities\\rarity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBB4736B-D9D8-466B-BB3B-4CEDF57E8144}|PokEmuBasic.Domain\\PokEmuBasic.Domain.csproj|solutionrelative:pokemubasic.domain\\entities\\rarity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBB4736B-D9D8-466B-BB3B-4CEDF57E8144}|PokEmuBasic.Domain\\PokEmuBasic.Domain.csproj|d:\\mock projects\\pokemubasic\\pokemubasic.domain\\entities\\packraritydroprate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBB4736B-D9D8-466B-BB3B-4CEDF57E8144}|PokEmuBasic.Domain\\PokEmuBasic.Domain.csproj|solutionrelative:pokemubasic.domain\\entities\\packraritydroprate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F12952-524A-45AF-9BE1-B65B31A4FC82}|PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj|d:\\mock projects\\pokemubasic\\pokemubasic.infrastructure\\enitiesconfig\\packconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25F12952-524A-45AF-9BE1-B65B31A4FC82}|PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj|solutionrelative:pokemubasic.infrastructure\\enitiesconfig\\packconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F12952-524A-45AF-9BE1-B65B31A4FC82}|PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj|d:\\mock projects\\pokemubasic\\pokemubasic.infrastructure\\enitiesconfig\\userconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25F12952-524A-45AF-9BE1-B65B31A4FC82}|PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj|solutionrelative:pokemubasic.infrastructure\\enitiesconfig\\userconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBB4736B-D9D8-466B-BB3B-4CEDF57E8144}|PokEmuBasic.Domain\\PokEmuBasic.Domain.csproj|d:\\mock projects\\pokemubasic\\pokemubasic.domain\\pokemubasic.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BBB4736B-D9D8-466B-BB3B-4CEDF57E8144}|PokEmuBasic.Domain\\PokEmuBasic.Domain.csproj|solutionrelative:pokemubasic.domain\\pokemubasic.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBB4736B-D9D8-466B-BB3B-4CEDF57E8144}|PokEmuBasic.Domain\\PokEmuBasic.Domain.csproj|d:\\mock projects\\pokemubasic\\pokemubasic.domain\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBB4736B-D9D8-466B-BB3B-4CEDF57E8144}|PokEmuBasic.Domain\\PokEmuBasic.Domain.csproj|solutionrelative:pokemubasic.domain\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 22,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "PokEmuBasic\\appsettings.Development.json",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic\\appsettings.Development.json",
+              "RelativeToolTip": "PokEmuBasic\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-24T18:01:14.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DI.cs",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Infrastructure\\IOC\\DI.cs",
+              "RelativeDocumentMoniker": "PokEmuBasic.Infrastructure\\IOC\\DI.cs",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Infrastructure\\IOC\\DI.cs",
+              "RelativeToolTip": "PokEmuBasic.Infrastructure\\IOC\\DI.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T17:52:00.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PokEmuBasic.API.csproj",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic\\PokEmuBasic.API.csproj",
+              "RelativeDocumentMoniker": "PokEmuBasic\\PokEmuBasic.API.csproj",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic\\PokEmuBasic.API.csproj",
+              "RelativeToolTip": "PokEmuBasic\\PokEmuBasic.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-24T17:43:04.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PokEmuBasic.Infrastructure",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj",
+              "RelativeToolTip": "PokEmuBasic.Infrastructure\\PokEmuBasic.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-24T17:34:36.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Application\\Repositories\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "PokEmuBasic.Application\\Repositories\\IUnitOfWork.cs",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Application\\Repositories\\IUnitOfWork.cs",
+              "RelativeToolTip": "PokEmuBasic.Application\\Repositories\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T17:33:41.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PokEmuBasic.Application",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Application\\PokEmuBasic.Application.csproj",
+              "RelativeDocumentMoniker": "PokEmuBasic.Application\\PokEmuBasic.Application.csproj",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Application\\PokEmuBasic.Application.csproj",
+              "RelativeToolTip": "PokEmuBasic.Application\\PokEmuBasic.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-24T17:32:51.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DbContext.cs",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Infrastructure\\Database\\DbContext.cs",
+              "RelativeDocumentMoniker": "PokEmuBasic.Infrastructure\\Database\\DbContext.cs",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Infrastructure\\Database\\DbContext.cs",
+              "RelativeToolTip": "PokEmuBasic.Infrastructure\\Database\\DbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T17:30:16.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserCardConfig.cs",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Infrastructure\\EnitiesConfig\\UserCardConfig.cs",
+              "RelativeDocumentMoniker": "PokEmuBasic.Infrastructure\\EnitiesConfig\\UserCardConfig.cs",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Infrastructure\\EnitiesConfig\\UserCardConfig.cs",
+              "RelativeToolTip": "PokEmuBasic.Infrastructure\\EnitiesConfig\\UserCardConfig.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T17:27:23.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PackRarityDropRateConfig.cs",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Infrastructure\\EnitiesConfig\\PackRarityDropRateConfig.cs",
+              "RelativeDocumentMoniker": "PokEmuBasic.Infrastructure\\EnitiesConfig\\PackRarityDropRateConfig.cs",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Infrastructure\\EnitiesConfig\\PackRarityDropRateConfig.cs",
+              "RelativeToolTip": "PokEmuBasic.Infrastructure\\EnitiesConfig\\PackRarityDropRateConfig.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T17:05:47.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RarityConfig.cs",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Infrastructure\\EnitiesConfig\\RarityConfig.cs",
+              "RelativeDocumentMoniker": "PokEmuBasic.Infrastructure\\EnitiesConfig\\RarityConfig.cs",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Infrastructure\\EnitiesConfig\\RarityConfig.cs",
+              "RelativeToolTip": "PokEmuBasic.Infrastructure\\EnitiesConfig\\RarityConfig.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAowBUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T17:03:39.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PackConfig.cs",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Infrastructure\\EnitiesConfig\\PackConfig.cs",
+              "RelativeDocumentMoniker": "PokEmuBasic.Infrastructure\\EnitiesConfig\\PackConfig.cs",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Infrastructure\\EnitiesConfig\\PackConfig.cs",
+              "RelativeToolTip": "PokEmuBasic.Infrastructure\\EnitiesConfig\\PackConfig.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowBUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T17:01:35.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CardConfig.cs",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Infrastructure\\EnitiesConfig\\CardConfig.cs",
+              "RelativeDocumentMoniker": "PokEmuBasic.Infrastructure\\EnitiesConfig\\CardConfig.cs",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Infrastructure\\EnitiesConfig\\CardConfig.cs",
+              "RelativeToolTip": "PokEmuBasic.Infrastructure\\EnitiesConfig\\CardConfig.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T15:44:56.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserConfig.cs",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Infrastructure\\EnitiesConfig\\UserConfig.cs",
+              "RelativeDocumentMoniker": "PokEmuBasic.Infrastructure\\EnitiesConfig\\UserConfig.cs",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Infrastructure\\EnitiesConfig\\UserConfig.cs",
+              "RelativeToolTip": "PokEmuBasic.Infrastructure\\EnitiesConfig\\UserConfig.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T15:41:45.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseEntityConfig.cs",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Infrastructure\\EnitiesConfig\\BaseEntityConfig.cs",
+              "RelativeDocumentMoniker": "PokEmuBasic.Infrastructure\\EnitiesConfig\\BaseEntityConfig.cs",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Infrastructure\\EnitiesConfig\\BaseEntityConfig.cs",
+              "RelativeToolTip": "PokEmuBasic.Infrastructure\\EnitiesConfig\\BaseEntityConfig.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwCEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T15:34:11.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PokEmuBasic.Domain",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Domain\\PokEmuBasic.Domain.csproj",
+              "RelativeDocumentMoniker": "PokEmuBasic.Domain\\PokEmuBasic.Domain.csproj",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Domain\\PokEmuBasic.Domain.csproj",
+              "RelativeToolTip": "PokEmuBasic.Domain\\PokEmuBasic.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-24T15:22:20.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Domain\\Entities\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "PokEmuBasic.Domain\\Entities\\BaseEntity.cs",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Domain\\Entities\\BaseEntity.cs",
+              "RelativeToolTip": "PokEmuBasic.Domain\\Entities\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T15:03:10.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserCard.cs",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Domain\\Entities\\UserCard.cs",
+              "RelativeDocumentMoniker": "PokEmuBasic.Domain\\Entities\\UserCard.cs",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Domain\\Entities\\UserCard.cs",
+              "RelativeToolTip": "PokEmuBasic.Domain\\Entities\\UserCard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T15:01:57.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PackRarityDropRate.cs",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Domain\\Entities\\PackRarityDropRate.cs",
+              "RelativeDocumentMoniker": "PokEmuBasic.Domain\\Entities\\PackRarityDropRate.cs",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Domain\\Entities\\PackRarityDropRate.cs",
+              "RelativeToolTip": "PokEmuBasic.Domain\\Entities\\PackRarityDropRate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T14:59:56.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Rarity.cs",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Domain\\Entities\\Rarity.cs",
+              "RelativeDocumentMoniker": "PokEmuBasic.Domain\\Entities\\Rarity.cs",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Domain\\Entities\\Rarity.cs",
+              "RelativeToolTip": "PokEmuBasic.Domain\\Entities\\Rarity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T14:59:24.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Pack.cs",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Domain\\Entities\\Pack.cs",
+              "RelativeDocumentMoniker": "PokEmuBasic.Domain\\Entities\\Pack.cs",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Domain\\Entities\\Pack.cs",
+              "RelativeToolTip": "PokEmuBasic.Domain\\Entities\\Pack.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T14:59:19.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Card.cs",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Domain\\Entities\\Card.cs",
+              "RelativeDocumentMoniker": "PokEmuBasic.Domain\\Entities\\Card.cs",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Domain\\Entities\\Card.cs",
+              "RelativeToolTip": "PokEmuBasic.Domain\\Entities\\Card.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T14:59:16.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "PokEmuBasic.Domain\\Entities\\User.cs",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "PokEmuBasic.Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T14:58:56.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic\\Program.cs",
+              "RelativeDocumentMoniker": "PokEmuBasic\\Program.cs",
+              "ToolTip": "D:\\MOCK PROJECTS\\PokEmuBasic\\PokEmuBasic\\Program.cs",
+              "RelativeToolTip": "PokEmuBasic\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T07:34:02.801Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Application\bin\Debug\net8.0\PokEmuBasic.Application.deps.json
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Application\bin\Debug\net8.0\PokEmuBasic.Application.dll
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Application\bin\Debug\net8.0\PokEmuBasic.Application.pdb
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Application\obj\Debug\net8.0\PokEmuBasic.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Application\obj\Debug\net8.0\PokEmuBasic.Application.AssemblyInfoInputs.cache
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Application\obj\Debug\net8.0\PokEmuBasic.Application.AssemblyInfo.cs
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Application\obj\Debug\net8.0\PokEmuBasic.Application.csproj.CoreCompileInputs.cache
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Application\obj\Debug\net8.0\PokEmuBasic.Application.dll
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Application\obj\Debug\net8.0\refint\PokEmuBasic.Application.dll
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Application\obj\Debug\net8.0\PokEmuBasic.Application.pdb
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Application\obj\Debug\net8.0\ref\PokEmuBasic.Application.dll

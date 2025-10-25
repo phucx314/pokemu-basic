@@ -1,0 +1,17 @@
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Infrastructure\bin\Debug\net8.0\PokEmuBasic.Infrastructure.deps.json
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Infrastructure\bin\Debug\net8.0\PokEmuBasic.Infrastructure.dll
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Infrastructure\bin\Debug\net8.0\PokEmuBasic.Infrastructure.pdb
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Infrastructure\bin\Debug\net8.0\PokEmuBasic.Application.dll
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Infrastructure\bin\Debug\net8.0\PokEmuBasic.Domain.dll
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Infrastructure\bin\Debug\net8.0\PokEmuBasic.Application.pdb
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Infrastructure\bin\Debug\net8.0\PokEmuBasic.Domain.pdb
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Infrastructure\obj\Debug\net8.0\PokEmuBasic.Infrastructure.csproj.AssemblyReference.cache
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Infrastructure\obj\Debug\net8.0\PokEmuBasic.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Infrastructure\obj\Debug\net8.0\PokEmuBasic.Infrastructure.AssemblyInfoInputs.cache
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Infrastructure\obj\Debug\net8.0\PokEmuBasic.Infrastructure.AssemblyInfo.cs
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Infrastructure\obj\Debug\net8.0\PokEmuBasic.Infrastructure.csproj.CoreCompileInputs.cache
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Infrastructure\obj\Debug\net8.0\PokEmuBa.CFF2C76A.Up2Date
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Infrastructure\obj\Debug\net8.0\PokEmuBasic.Infrastructure.dll
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Infrastructure\obj\Debug\net8.0\refint\PokEmuBasic.Infrastructure.dll
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Infrastructure\obj\Debug\net8.0\PokEmuBasic.Infrastructure.pdb
+D:\MOCK PROJECTS\PokEmuBasic\PokEmuBasic.Infrastructure\obj\Debug\net8.0\ref\PokEmuBasic.Infrastructure.dll
