@@ -1,0 +1,94 @@
+# ---- OS files ----
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---- IDE & tooling ----
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.rsuser
+*.sln.docstates
+*.vc.db
+*.VC.db
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+*.DotSettings.user
+
+# VS Code
+.vscode/
+
+# ---- Build outputs ----
+[Bb]in/
+[Oo]bj/
+out/
+artifacts/
+app.publish/
+.publish/
+
+# Test & benchmark outputs
+TestResults/
+[Tt]est[Rr]esult*/
+BenchmarkDotNet.Artifacts/
+
+# Logs
+[Ll]og/
+[Ll]ogs/
+*.log
+
+# ---- NuGet ----
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+*.nuget.props
+*.nuget.targets
+
+# ---- Coverage ----
+*.coverage
+*.coveragexml
+coverage*/
+.opencover.xml
+coverage.opencover.xml
+coverage.cobertura.xml
+coverage.json
+
+# ---- EF Core / Tooling ----
+# Keep Migrations/ tracked (don’t ignore). Ignore user-specific publish profiles.
+*.pubxml.user
+Properties/PublishProfiles/*.pubxml.user
+
+# ---- Local configuration overrides ----
+appsettings.Local.json
+appsettings.*.Local.json
+secrets.json
+**/appsettings.Development.json
+
+# ---- Temporary / cache files ----
+*.tmp
+*.temp
+*.swp
+*.swo
+*.cache/
+*.ipch
+*.opendb
+*.psess
+*.vsp
+*.vspx
+*.sdf
+
+# ---- Misc ----
+# Azure Functions local settings (if present)
+local.settings.json
+
+# Don’t check in per-user project files
+*.csproj.user
+*.vbproj.user
+
