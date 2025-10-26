@@ -55,9 +55,21 @@ namespace PokEmuBasic.Infrastructure.Repositories
 
         public async Task<Card?> GetRandomCardByRarityAsync(int rarityId)
         {
+            int countCardWithRarity = await _dbContext.Cards
+                .CountAsync(c => c.RarityId == rarityId);
+
+            if (countCardWithRarity == 0)
+            {
+                return null;
+            }
+
+            int randomIndex = Random.Shared.Next(0, countCardWithRarity); // 0 -> card count-1 (eg: 5000 cards => 0 -> 4999)
+
             var cardByRarityId = await _dbContext.Cards
                 .Where(c => c.RarityId == rarityId)
-                .OrderBy(c => Guid.NewGuid()) // trick: random order
+                .OrderBy(c => c.Id) // sort by constant values - id - to ensure consistent ordering
+                .Skip(randomIndex) // eg: skip (offset) 3125 first cards
+                .Take(1) // take 1 next card. eg: 3126th card
                 .FirstOrDefaultAsync();
 
             return cardByRarityId;

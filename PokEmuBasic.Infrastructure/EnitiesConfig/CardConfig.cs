@@ -38,6 +38,11 @@ namespace PokEmuBasic.Infrastructure.EnitiesConfig
                 .WithMany(r => r.Cards)
                 .HasForeignKey(c => c.RarityId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasIndex(c => new { c.RarityId, c.Id });
+
+            builder.HasIndex(c => c.IndexNumber)
+                .IsUnique();
         }
     }
 }
