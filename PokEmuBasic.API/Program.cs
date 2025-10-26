@@ -1,6 +1,7 @@
 using PokEmuBasic.API.IOC;
-using PokEmuBasic.Infrastructure.IOC;
+using PokEmuBasic.API.Middlewares;
 using PokEmuBasic.Application.IOC;
+using PokEmuBasic.Infrastructure.IOC;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +28,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseRegisterMiddleware();
 
 app.UseHttpsRedirection();
 
