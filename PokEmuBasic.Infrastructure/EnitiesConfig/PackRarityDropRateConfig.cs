@@ -23,9 +23,9 @@ namespace PokEmuBasic.Infrastructure.EnitiesConfig
                    .OnDelete(DeleteBehavior.Cascade); // when a pack is deleted, its drop rates are also deleted
 
             builder.HasOne(prd => prd.Rarity)
-               .WithMany(r => r.PackRarityDropRates) 
-               .HasForeignKey(prd => prd.RarityId)
-               .OnDelete(DeleteBehavior.Restrict); // prevent deletion of a rarity if it's referenced
+                   .WithMany(r => r.PackRarityDropRates) 
+                   .HasForeignKey(prd => prd.RarityId)
+                   .OnDelete(DeleteBehavior.Restrict); // prevent deletion of a rarity if it's referenced
 
             builder.Property(prd => prd.DropRate)
                    .IsRequired();

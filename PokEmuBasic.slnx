@@ -1,6 +1,6 @@
 <Solution>
+  <Project Path="PokEmuBasic.API/PokEmuBasic.API.csproj" />
   <Project Path="PokEmuBasic.Application/PokEmuBasic.Application.csproj" Id="a0e93eff-bc4e-4e5d-b177-78b1fd4b980c" />
   <Project Path="PokEmuBasic.Domain/PokEmuBasic.Domain.csproj" Id="bbb4736b-d9d8-466b-bb3b-4cedf57e8144" />
   <Project Path="PokEmuBasic.Infrastructure/PokEmuBasic.Infrastructure.csproj" Id="25f12952-524a-45af-9be1-b65b31a4fc82" />
-  <Project Path="PokEmuBasic/PokEmuBasic.API.csproj" />
 </Solution>

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PokEmuBasic.Application.Repositories;
+using PokEmuBasic.Application.Services.Interfaces;
 using PokEmuBasic.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,13 @@ namespace PokEmuBasic.Infrastructure.Database
 {
     public class DatabaseContext : DbContext, IUnitOfWork
     {
+        private readonly ICurrentUserContext _currentUserContext;
+
+        public DatabaseContext(DbContextOptions<DatabaseContext> options, ICurrentUserContext currentUserContext) : base(options)
+        {
+            _currentUserContext = currentUserContext;
+        }
+
         public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
         {
         }
@@ -23,6 +31,7 @@ namespace PokEmuBasic.Infrastructure.Database
         public DbSet<Rarity> Rarities { get; set; }
         public DbSet<UserCard> UserCards { get; set; }
         public DbSet<PackRarityDropRate> PackRarityDropRates { get; set; }
+        public DbSet<UserSession> UserSessions { get; set; }
         #endregion
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

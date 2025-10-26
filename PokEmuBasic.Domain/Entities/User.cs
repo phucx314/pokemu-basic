@@ -15,5 +15,6 @@ namespace PokEmuBasic.Domain.Entities
         public string Avatar { get; set; } = default!;
 
         public ICollection<UserCard> UserCards { get; set; } = [];
+        public ICollection<UserSession> UserSessions { get; set; } = [];
     }
 }

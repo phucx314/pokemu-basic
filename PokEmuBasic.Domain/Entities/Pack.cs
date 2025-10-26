@@ -10,6 +10,7 @@ namespace PokEmuBasic.Domain.Entities
     {
         public string PackName { get; set; } = default!;
         public int Price { get; set; }
+        public int? GlobalQuantity { get; set; }
         public int CardQuantity { get; set; }
         public string PackImage { get; set; } = default!;
 

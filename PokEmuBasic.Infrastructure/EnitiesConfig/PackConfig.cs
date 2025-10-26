@@ -24,7 +24,11 @@ namespace PokEmuBasic.Infrastructure.EnitiesConfig
             builder.Property(p => p.Price)
                 .HasColumnName("price")
                 .IsRequired();
-            
+
+            builder.Property(p => p.GlobalQuantity)
+                .HasColumnName("global_quantity")
+                .IsRequired(false);
+
             builder.Property(p => p.CardQuantity)
                 .HasColumnName("card_quantity")
                 .IsRequired();
