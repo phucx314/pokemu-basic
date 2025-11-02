@@ -59,11 +59,13 @@ namespace PokEmuBasic.Application.Services
             }
 
             session.IsRevoked = true;
+            session.RevokedAt = DateTime.UtcNow;
 
             await _userSessionRepository.Update(session);
             await _unitOfWork.SaveChangesAsync();
 
             return await CreateAndSaveTokensAsync(session.User, session.DeviceName, session.IpAddress);
+            // TODO: check lai phan nay (ko update devicename va ipaddress ma lay cai cũ) #311025
         }
 
         private async Task<LoginResponse> CreateAndSaveTokensAsync(User user, string? deviceName, string? ipAddress)

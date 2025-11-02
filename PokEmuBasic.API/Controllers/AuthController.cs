@@ -47,7 +47,7 @@ namespace PokEmuBasic.API.Controllers
             return OkResponse(data, "Tokens refreshed");
         }
 
-        [HttpGet("me")] // TODO: cần sửa ko show hash pass
+        [HttpGet("me")]
         [Authorize]
         [ValidateSession]
         public async Task<IActionResult> GetMyInfo()
