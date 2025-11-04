@@ -30,6 +30,7 @@ namespace PokEmuBasic.Application.IOC
             {
                 cfg.AddProfile(new UserProfile());
                 cfg.AddProfile(new CardProfile());
+                cfg.AddProfile(new PackProfile());
             });
 
             return services;

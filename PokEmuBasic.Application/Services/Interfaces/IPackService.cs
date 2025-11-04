@@ -9,6 +9,9 @@ namespace PokEmuBasic.Application.Services.Interfaces
 {
     public interface IPackService
     {
+        Task<List<GetPacksResponse>> GetAllPacks();
+        Task<List<GetPacksResponse>> GetAllAvailablePacks();
+        Task<List<GetPacksResponse>> GetFeaturedPacksAsync(); // reuse the common dto
         Task<IEnumerable<OpenCardResponse>> OpenPackAsync(int packId);
     }
 }

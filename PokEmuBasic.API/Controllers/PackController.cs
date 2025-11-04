@@ -21,6 +21,30 @@ namespace PokEmuBasic.API.Controllers
             _packService = packService;
         }
 
+        [HttpGet("list")]
+        public async Task<IActionResult> GetAllPacks()
+        {
+            var response = await _packService.GetAllPacks();
+
+            return OkResponse(response, "Get all packs successfully");
+        }
+
+        [HttpGet("list-available")]
+        public async Task<IActionResult> GetAllAvailablePacks()
+        {
+            var response = await _packService.GetAllAvailablePacks();
+
+            return OkResponse(response, "Get all available packs successfully");
+        }
+
+        [HttpGet("list-featured")]
+        public async Task<IActionResult> GetFeaturedPacksAsync()
+        {
+            var response = await _packService.GetFeaturedPacksAsync();
+
+            return OkResponse(response, "Get featured packs successfully");
+        }
+
         [HttpPost("{packId}/open")]
         public async Task<IActionResult> OpenPackAsync([FromRoute] int packId)
         {

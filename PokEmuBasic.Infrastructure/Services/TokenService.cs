@@ -44,7 +44,7 @@ namespace PokEmuBasic.Infrastructure.Services
                 Issuer = _tokenSettings.Issuer,
                 Audience = _tokenSettings.Audience,
                 Expires = DateTime.UtcNow.AddHours(_tokenSettings.ExpiresInHours),
-                // Expires = DateTime.UtcNow.AddSeconds(10),
+                //Expires = DateTime.UtcNow.AddSeconds(10),
                 SigningCredentials = signinCredentials
             };
 

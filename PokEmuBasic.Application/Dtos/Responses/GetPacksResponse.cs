@@ -4,17 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PokEmuBasic.Domain.Entities
+namespace PokEmuBasic.Application.Dtos.Responses
 {
-    public class Pack : BaseEntity
+    public class GetPacksResponse
     {
+        public int Id { get; set; }
         public string PackName { get; set; } = default!;
-        public int Price { get; set; }
-        public int? GlobalQuantity { get; set; }
-        public int CardQuantity { get; set; }
         public string PackImage { get; set; } = default!;
+        public int Price { get; set; }
+        public int CardQuantity { get; set; }
+        public int? GlobalQuantity { get; set; }
         public bool IsFeatured { get; set; }
-
-        public ICollection<PackRarityDropRate> PackRarityDropRates { get; set; } = [];
     }
 }

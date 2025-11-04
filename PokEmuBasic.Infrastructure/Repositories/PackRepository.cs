@@ -69,7 +69,7 @@ namespace PokEmuBasic.Infrastructure.Repositories
             var availablePacks = _dbContext.Packs
                 .WithoutDeleted()
                 .Where(p => p.GlobalQuantity > 0)
-                .OrderBy(p => p.CreatedAt)
+                .OrderByDescending(p => p.CreatedAt)
                 .ToListAsync();
 
             return await availablePacks;
@@ -103,6 +103,15 @@ namespace PokEmuBasic.Infrastructure.Repositories
         public Task UpdateRangeAsync(IEnumerable<Pack> entities)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<IEnumerable<Pack?>> GetFeaturedPacksAsync()
+        {
+            return await _dbContext.Packs
+                .WithoutDeleted()
+                .Where(p => p.IsFeatured)
+                .OrderByDescending(p => p.CreatedAt)
+                .ToListAsync();
         }
     }
 }

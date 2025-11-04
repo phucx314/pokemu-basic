@@ -139,5 +139,32 @@ namespace PokEmuBasic.Application.Services
             // handle exception when dropRate agg is not equal to 1.0
             return dropRates.LastOrDefault()?.RarityId ?? 0; // return 0 if empty list
         }
+
+        public async Task<List<GetPacksResponse>> GetAllAvailablePacks()
+        {
+            var packs = await _packRepository.GetAllAvailablePacksAsync();
+
+            var response = _mapper.Map<List<GetPacksResponse>>(packs);
+
+            return response;
+        }
+
+        public async Task<List<GetPacksResponse>> GetFeaturedPacksAsync()
+        {
+            var packs = await _packRepository.GetFeaturedPacksAsync();
+
+            var response = _mapper.Map<List<GetPacksResponse>>(packs);
+
+            return response;
+        }
+
+        public async Task<List<GetPacksResponse>> GetAllPacks()
+        {
+            var packs = await _packRepository.GetAllPacksAsync();
+
+            var response = _mapper.Map<List<GetPacksResponse>>(packs);
+
+            return response;
+        }
     }
 }

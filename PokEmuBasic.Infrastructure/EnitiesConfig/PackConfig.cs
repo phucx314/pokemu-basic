@@ -37,6 +37,10 @@ namespace PokEmuBasic.Infrastructure.EnitiesConfig
                 .HasColumnName("pack_image")
                 .IsRequired()
                 .HasMaxLength(255);
+
+            builder.Property(p => p.IsFeatured)
+                .HasColumnName("is_featured")
+                .HasDefaultValue(false);
         }
     }
 }

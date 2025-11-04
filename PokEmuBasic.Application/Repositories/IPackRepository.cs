@@ -11,6 +11,7 @@ namespace PokEmuBasic.Application.Repositories
     {
         Task<IEnumerable<Pack?>> GetAllPacksAsync(); // get 1 list LOAI PACK chu ko phai la 1 list pack 
         Task<IEnumerable<Pack?>> GetAllAvailablePacksAsync(); // get 1 list LOAI PACK chu ko phai la 1 list pack 
+        Task<IEnumerable<Pack?>> GetFeaturedPacksAsync();
         Task<Pack?> GetPackByIdAsync(int packId);
         Task<IEnumerable<PackRarityDropRate>> GetDropRatesAsync(int packId);
     }
