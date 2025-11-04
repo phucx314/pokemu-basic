@@ -12,6 +12,6 @@ namespace PokEmuBasic.Application.Dtos.Responses
         public string CardName { get; set; } = default!;
         public string CardImage { get; set; } = default!;
         public int IndexNumber { get; set; }
-        public string RarityId { get; set; } = default!;
+        public int RarityId { get; set; }
     }
 }
