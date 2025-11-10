@@ -33,7 +33,23 @@ namespace PokEmuBasic.Infrastructure.EnitiesConfig
                 .HasColumnName("card_image")
                 .IsRequired()
                 .HasMaxLength(255);
-            
+
+            builder.Property(c => c.CardSuperTypeId)
+                .HasColumnName("card_super_type_id")
+                .IsRequired(false); // tạm nullable
+
+            builder.Property(c => c.CardSubTypeId)
+                .HasColumnName("card_sub_type_id")
+                .IsRequired(false); // tạm nullable
+
+            builder.Property(c => c.ElementTypeId)
+                .HasColumnName("element_type_id")
+                .IsRequired(false);
+
+            builder.Property(c => c.PowerIndex)
+                .HasColumnName("power_index")
+                .IsRequired(false);
+
             builder.HasOne(c => c.Rarity)
                 .WithMany(r => r.Cards)
                 .HasForeignKey(c => c.RarityId)
