@@ -13,6 +13,7 @@ namespace PokEmuBasic.Application.Repositories
         Task<IEnumerable<Pack?>> GetAllAvailablePacksAsync(); // get 1 list LOAI PACK chu ko phai la 1 list pack 
         Task<IEnumerable<Pack?>> GetFeaturedPacksAsync();
         Task<Pack?> GetPackByIdAsync(int packId);
-        Task<IEnumerable<PackRarityDropRate>> GetDropRatesAsync(int packId);
+        Task<IEnumerable<PackRarityDropRate>> GetDropRatesAsync(int packId); // cai nay de phuc vu ham open pack
+        IQueryable<PackRarityDropRate> GetDropRatesQueryable(int packId); // cai nay de phuc vu ham ham get drop rates, ko phai List
     }
 }

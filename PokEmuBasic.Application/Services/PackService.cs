@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using AutoMapper.QueryableExtensions;
+using Microsoft.EntityFrameworkCore;
 using PokEmuBasic.Application.Dtos.Responses;
 using PokEmuBasic.Application.Exceptions;
 using PokEmuBasic.Application.Repositories;
@@ -165,6 +167,17 @@ namespace PokEmuBasic.Application.Services
             var response = _mapper.Map<List<GetPacksResponse>>(packs);
 
             return response;
+        }
+
+        public async Task<IEnumerable<DropRateResponse>> GetDropRatesAsync(int packId) // day moi tao List
+        {
+            var dropRatesQuery = _packRepository.GetDropRatesQueryable(packId);
+
+            var res = await dropRatesQuery
+                .ProjectTo<DropRateResponse>(_mapper.ConfigurationProvider) // use ProjectTo cuz dropRates is just a SELECT query, it selects only needed columns -> better performance
+                .ToListAsync();
+
+            return res;
         }
     }
 }

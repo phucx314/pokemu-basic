@@ -13,5 +13,6 @@ namespace PokEmuBasic.Application.Services.Interfaces
         Task<List<GetPacksResponse>> GetAllAvailablePacks();
         Task<List<GetPacksResponse>> GetFeaturedPacksAsync(); // reuse the common dto
         Task<IEnumerable<OpenCardResponse>> OpenPackAsync(int packId);
+        Task<IEnumerable<DropRateResponse>> GetDropRatesAsync(int packId);
     }
 }

@@ -16,7 +16,8 @@ namespace PokEmuBasic.API.Controllers
             ICurrentUserContext currentUserContext,
             ILogger<PackController> logger,
             IAuthService authService,
-            IPackService packService) : base(httpContextAccessor, currentUserContext, logger, authService)
+            IPackService packService
+        ) : base(httpContextAccessor, currentUserContext, logger, authService)
         {
             _packService = packService;
         }
@@ -51,6 +52,14 @@ namespace PokEmuBasic.API.Controllers
             var response = await _packService.OpenPackAsync(packId);
 
             return CreatedResponse(response, "Opened pack successfully");
+        }
+
+        [HttpGet("{packId}/get-drop-rates")]
+        public async Task<IActionResult> GetDropRatesAsync([FromRoute] int packId)
+        {
+            var res = await _packService.GetDropRatesAsync(packId);
+
+            return OkResponse(res, "Get drop rates successfully");
         }
     }
 }

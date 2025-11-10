@@ -78,7 +78,6 @@ namespace PokEmuBasic.Infrastructure.Repositories
         public async Task<IEnumerable<PackRarityDropRate>> GetDropRatesAsync(int packId)
         {
             var dropRates = _dbContext.PackRarityDropRates
-                // can them without deleted
                 .Where(pdr => pdr.PackId == packId)
                 .ToListAsync();
 
@@ -112,6 +111,14 @@ namespace PokEmuBasic.Infrastructure.Repositories
                 .Where(p => p.IsFeatured)
                 .OrderByDescending(p => p.CreatedAt)
                 .ToListAsync();
+        }
+
+        public IQueryable<PackRarityDropRate> GetDropRatesQueryable(int packId)
+        {
+            var dropRate = _dbContext.PackRarityDropRates
+                .Where(prdr => prdr.PackId == packId);
+
+            return dropRate;
         }
     }
 }
