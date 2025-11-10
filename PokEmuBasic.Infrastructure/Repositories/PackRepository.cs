@@ -116,7 +116,8 @@ namespace PokEmuBasic.Infrastructure.Repositories
         public IQueryable<PackRarityDropRate> GetDropRatesQueryable(int packId)
         {
             var dropRate = _dbContext.PackRarityDropRates
-                .Where(prdr => prdr.PackId == packId);
+                .Where(prdr => prdr.PackId == packId)
+                .OrderBy(prdr => prdr.RarityId);
 
             return dropRate;
         }
