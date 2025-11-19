@@ -26,6 +26,7 @@ namespace PokEmuBasic.Infrastructure.IOC
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ICardRepository, CardRepository>();
             services.AddScoped<IPackRepository, PackRepository>();
+            services.AddScoped<IExpansionRepository, ExpansionRepository>();
             services.AddScoped<IUserCardRepository, UserCardRepository>();
             services.AddScoped<IUserSessionRepository, UserSessionRepository>();
             services.AddScoped<IUnitOfWork>(provider => provider.GetRequiredService<DatabaseContext>());

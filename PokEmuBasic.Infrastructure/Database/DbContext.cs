@@ -35,6 +35,7 @@ namespace PokEmuBasic.Infrastructure.Database
         public DbSet<CardSuperType> CardSuperTypes { get; set; }
         public DbSet<CardSubType> CardSubTypes { get; set; }
         public DbSet<ElementType> ElementTypes { get; set; }
+        public DbSet<Expansion> Expansions { get; set; }
         #endregion
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

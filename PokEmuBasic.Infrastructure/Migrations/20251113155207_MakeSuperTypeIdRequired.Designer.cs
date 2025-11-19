@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using PokEmuBasic.Infrastructure.Database;
@@ -11,9 +12,11 @@ using PokEmuBasic.Infrastructure.Database;
 namespace PokEmuBasic.Infrastructure.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20251113155207_MakeSuperTypeIdRequired")]
+    partial class MakeSuperTypeIdRequired
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -61,15 +64,7 @@ namespace PokEmuBasic.Infrastructure.Migrations
                         .HasColumnType("integer")
                         .HasColumnName("element_type_id");
 
-                    b.Property<int?>("ExpansionId")
-                        .HasColumnType("integer")
-                        .HasColumnName("expansion_id");
-
-                    b.Property<int?>("ExpansionIndex")
-                        .HasColumnType("integer")
-                        .HasColumnName("expansion_index");
-
-                    b.Property<int?>("IndexNumber")
+                    b.Property<int>("IndexNumber")
                         .HasColumnType("integer")
                         .HasColumnName("index_number");
 
@@ -104,9 +99,6 @@ namespace PokEmuBasic.Infrastructure.Migrations
 
                     b.HasIndex("ElementTypeId")
                         .HasDatabaseName("ix_cards_element_type_id");
-
-                    b.HasIndex("ExpansionId")
-                        .HasDatabaseName("ix_cards_expansion_id");
 
                     b.HasIndex("IndexNumber")
                         .IsUnique()
@@ -186,67 +178,6 @@ namespace PokEmuBasic.Infrastructure.Migrations
                     b.ToTable("element_types", (string)null);
                 });
 
-            modelBuilder.Entity("PokEmuBasic.Domain.Entities.Expansion", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasColumnName("id");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("CreatedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("created_at")
-                        .HasDefaultValueSql("NOW()");
-
-                    b.Property<string>("ExpansionCode")
-                        .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("character varying(10)")
-                        .HasColumnName("expansion_code");
-
-                    b.Property<string>("ExpansionImage")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("character varying(255)")
-                        .HasColumnName("expansion_image");
-
-                    b.Property<string>("ExpansionName")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("character varying(255)")
-                        .HasColumnName("expansion_name");
-
-                    b.Property<bool>("IsDeleted")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("boolean")
-                        .HasDefaultValue(false)
-                        .HasColumnName("is_deleted");
-
-                    b.Property<int?>("PrefixCode")
-                        .HasColumnType("integer")
-                        .HasColumnName("prefix_code");
-
-                    b.Property<DateTime>("ReleaseDate")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("release_date")
-                        .HasDefaultValueSql("NOW()");
-
-                    b.Property<DateTime>("UpdatedAt")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("updated_at")
-                        .HasDefaultValueSql("NOW()");
-
-                    b.HasKey("Id")
-                        .HasName("pk_expansions");
-
-                    b.ToTable("expansions", (string)null);
-                });
-
             modelBuilder.Entity("PokEmuBasic.Domain.Entities.Pack", b =>
                 {
                     b.Property<int>("Id")
@@ -265,10 +196,6 @@ namespace PokEmuBasic.Infrastructure.Migrations
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("created_at")
                         .HasDefaultValueSql("NOW()");
-
-                    b.Property<int?>("ExpansionId")
-                        .HasColumnType("integer")
-                        .HasColumnName("expansion_id");
 
                     b.Property<int?>("GlobalQuantity")
                         .HasColumnType("integer")
@@ -310,9 +237,6 @@ namespace PokEmuBasic.Infrastructure.Migrations
 
                     b.HasKey("Id")
                         .HasName("pk_packs");
-
-                    b.HasIndex("ExpansionId")
-                        .HasDatabaseName("ix_packs_expansion_id");
 
                     b.ToTable("packs", (string)null);
                 });
@@ -576,11 +500,6 @@ namespace PokEmuBasic.Infrastructure.Migrations
                         .HasForeignKey("ElementTypeId")
                         .HasConstraintName("fk_cards_element_types_element_type_id");
 
-                    b.HasOne("PokEmuBasic.Domain.Entities.Expansion", "Expansion")
-                        .WithMany("Cards")
-                        .HasForeignKey("ExpansionId")
-                        .HasConstraintName("fk_cards_expansion_expansion_id");
-
                     b.HasOne("PokEmuBasic.Domain.Entities.Rarity", "Rarity")
                         .WithMany("Cards")
                         .HasForeignKey("RarityId")
@@ -594,19 +513,7 @@ namespace PokEmuBasic.Infrastructure.Migrations
 
                     b.Navigation("ElementType");
 
-                    b.Navigation("Expansion");
-
                     b.Navigation("Rarity");
-                });
-
-            modelBuilder.Entity("PokEmuBasic.Domain.Entities.Pack", b =>
-                {
-                    b.HasOne("PokEmuBasic.Domain.Entities.Expansion", "Expansion")
-                        .WithMany("Packs")
-                        .HasForeignKey("ExpansionId")
-                        .HasConstraintName("fk_packs_expansion_expansion_id");
-
-                    b.Navigation("Expansion");
                 });
 
             modelBuilder.Entity("PokEmuBasic.Domain.Entities.PackRarityDropRate", b =>
@@ -681,13 +588,6 @@ namespace PokEmuBasic.Infrastructure.Migrations
             modelBuilder.Entity("PokEmuBasic.Domain.Entities.ElementType", b =>
                 {
                     b.Navigation("Cards");
-                });
-
-            modelBuilder.Entity("PokEmuBasic.Domain.Entities.Expansion", b =>
-                {
-                    b.Navigation("Cards");
-
-                    b.Navigation("Packs");
                 });
 
             modelBuilder.Entity("PokEmuBasic.Domain.Entities.Pack", b =>

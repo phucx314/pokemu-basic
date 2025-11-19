@@ -23,7 +23,7 @@ namespace PokEmuBasic.Infrastructure.EnitiesConfig
             
             builder.Property(c => c.IndexNumber)
                 .HasColumnName("index_number")
-                .IsRequired();
+                .IsRequired(false);
             
             builder.Property(c => c.RarityId)
                 .HasColumnName("rarity_id")
@@ -36,7 +36,7 @@ namespace PokEmuBasic.Infrastructure.EnitiesConfig
 
             builder.Property(c => c.CardSuperTypeId)
                 .HasColumnName("card_super_type_id")
-                .IsRequired(false); // tạm nullable
+                .IsRequired();
 
             builder.Property(c => c.CardSubTypeId)
                 .HasColumnName("card_sub_type_id")
@@ -48,6 +48,14 @@ namespace PokEmuBasic.Infrastructure.EnitiesConfig
 
             builder.Property(c => c.PowerIndex)
                 .HasColumnName("power_index")
+                .IsRequired(false);
+
+            builder.Property(c => c.ExpansionId)
+                .HasColumnName("expansion_id")
+                .IsRequired(false);
+
+            builder.Property(c => c.ExpansionIndex)
+                .HasColumnName("expansion_index")
                 .IsRequired(false);
 
             builder.HasOne(c => c.Rarity)

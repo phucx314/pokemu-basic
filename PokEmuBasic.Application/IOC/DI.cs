@@ -19,6 +19,7 @@ namespace PokEmuBasic.Application.IOC
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<ICurrentUserContext, CurrentUserContext>();
             services.AddScoped<IPackService, PackService>();
+            services.AddScoped<IExpansionService, ExpansionService>();
 
             return services;
         }
@@ -32,6 +33,7 @@ namespace PokEmuBasic.Application.IOC
                 cfg.AddProfile(new CardProfile());
                 cfg.AddProfile(new PackProfile());
                 cfg.AddProfile(new PackRarityDropRateProfile());
+                cfg.AddProfile(new ExpansionProfile());
             });
 
             return services;

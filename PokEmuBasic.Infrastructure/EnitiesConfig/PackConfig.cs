@@ -41,6 +41,10 @@ namespace PokEmuBasic.Infrastructure.EnitiesConfig
             builder.Property(p => p.IsFeatured)
                 .HasColumnName("is_featured")
                 .HasDefaultValue(false);
+
+            builder.Property(p => p.ExpansionId)
+                .HasColumnName("expansion_id")
+                .IsRequired(false);
         }
     }
 }

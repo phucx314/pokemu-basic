@@ -14,6 +14,9 @@ namespace PokEmuBasic.Domain.Entities
         public int CardQuantity { get; set; }
         public string PackImage { get; set; } = default!;
         public bool IsFeatured { get; set; }
+        public int? ExpansionId { get; set; }
+
+        public Expansion? Expansion { get; set; } = default!;
 
         public ICollection<PackRarityDropRate> PackRarityDropRates { get; set; } = [];
     }

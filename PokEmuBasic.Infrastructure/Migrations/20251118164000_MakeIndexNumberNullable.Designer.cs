@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using PokEmuBasic.Infrastructure.Database;
@@ -11,9 +12,11 @@ using PokEmuBasic.Infrastructure.Database;
 namespace PokEmuBasic.Infrastructure.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20251118164000_MakeIndexNumberNullable")]
+    partial class MakeIndexNumberNullable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -203,15 +206,9 @@ namespace PokEmuBasic.Infrastructure.Migrations
 
                     b.Property<string>("ExpansionCode")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("character varying(10)")
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)")
                         .HasColumnName("expansion_code");
-
-                    b.Property<string>("ExpansionImage")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("character varying(255)")
-                        .HasColumnName("expansion_image");
 
                     b.Property<string>("ExpansionName")
                         .IsRequired()
