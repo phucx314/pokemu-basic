@@ -1,4 +1,5 @@
-﻿using PokEmuBasic.Domain.Entities;
+﻿using PokEmuBasic.Application.Dtos.Requests;
+using PokEmuBasic.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace PokEmuBasic.Application.Repositories
 {
     public interface IExpansionRepository : IRepository<Expansion>
     {
-        Task<IEnumerable<Expansion>> GetExpansionsOptionsAsync();
+        Task<(IEnumerable<Expansion> expansionOptions, int total)> GetExpansionsOptionsAsync(GetExpansionOptionsRequest request);
     }
 }

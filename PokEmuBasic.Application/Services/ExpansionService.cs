@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using PokEmuBasic.Application.Dtos.Requests;
 using PokEmuBasic.Application.Dtos.Responses;
 using PokEmuBasic.Application.Repositories;
 using PokEmuBasic.Application.Services.Interfaces;
@@ -29,13 +30,15 @@ namespace PokEmuBasic.Application.Services
             _mapper = mapper;
         }
 
-        public async Task<List<GetExpansionOptionsResponse>> GetExpansionOptionsAsync()
+        public async Task<(List<GetExpansionOptionsResponse> expansionOptions, int total)> GetExpansionOptionsAsync(GetExpansionOptionsRequest request)
         {
-            var expansions = await _expansionRepository.GetExpansionsOptionsAsync();
+            // get raw data from repository
+            var (expansionOptions, total) = await _expansionRepository.GetExpansionsOptionsAsync(request);
 
-            var res = _mapper.Map<List<GetExpansionOptionsResponse>>(expansions);
+            // map to response dto
+            var res = _mapper.Map<List<GetExpansionOptionsResponse>>(expansionOptions);
 
-            return res;
+            return (res, total);
         }
     }
 }

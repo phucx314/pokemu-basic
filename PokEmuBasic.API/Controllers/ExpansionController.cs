@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using PokEmuBasic.Application.Dtos;
+using PokEmuBasic.Application.Dtos.Requests;
 using PokEmuBasic.Application.Services.Interfaces;
 
 namespace PokEmuBasic.API.Controllers
@@ -23,11 +25,19 @@ namespace PokEmuBasic.API.Controllers
         }
 
         [HttpGet("options")]
-        public async Task<IActionResult> GetExpansionOptionsAsync()
+        public async Task<IActionResult> GetExpansionOptionsAsync([FromQuery] GetExpansionOptionsRequest request)
         {
-            var res = await _expansionService.GetExpansionOptionsAsync();
+            // get raw data from service
+            var (res, total) = await _expansionService.GetExpansionOptionsAsync(request);
 
-            return OkResponse(res, "Get expansion options successfully");
+            // map pagination metadata tai controller
+            var paginationMetadata = new PaginationMetadata(
+                request.CurrentPage,
+                request.PageSize,
+                total
+            );
+
+            return OkResponse(res, paginationMetadata, "Get expansion options successfully");
         }
     }
 }

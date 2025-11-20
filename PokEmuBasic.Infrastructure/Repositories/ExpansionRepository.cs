@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PokEmuBasic.Application.Dtos.Requests;
 using PokEmuBasic.Application.Repositories;
 using PokEmuBasic.Domain.Entities;
 using PokEmuBasic.Domain.Extensions;
@@ -54,15 +55,37 @@ namespace PokEmuBasic.Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<IEnumerable<Expansion>> GetExpansionsOptionsAsync()
+        public async Task<(IEnumerable<Expansion> expansionOptions, int total)> GetExpansionsOptionsAsync(GetExpansionOptionsRequest request)
         {
-            var expansionOptions = await _dbContext.Expansions
-               .WithoutDeleted()
-               .OrderByDescending(ex => ex.ReleaseDate)
-               .Take(25)
-               .ToListAsync();
+            // common query
+            var query = _dbContext.Expansions
+                .AsNoTracking();
 
-            return expansionOptions;
+            // search query
+            if (!string.IsNullOrEmpty(request.SearchKey))
+            {
+                var searchKey = request.SearchKey.Trim().ToLower();
+
+                query = query.Where(ex =>
+                    ex.ExpansionName.ToLower().Contains(searchKey) ||
+                    ex.ExpansionCode.ToLower().Contains(searchKey)
+                );
+            }
+
+            // get total
+            var total = await query.CountAsync();
+
+            // apply sorting
+            query = query.ApplySorting(request.SortBy, request.Direction);
+
+            // pagination
+            var expansionOptions = await query
+                .WithoutDeleted()
+                .Skip((request.CurrentPage - 1) * request.PageSize)
+                .Take(request.PageSize) // 16
+                .ToListAsync();
+
+            return (expansionOptions, total);
         }
 
         public Task UpdateAsync(Expansion entity)

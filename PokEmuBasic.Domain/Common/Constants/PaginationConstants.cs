@@ -8,7 +8,7 @@ namespace PokEmuBasic.Domain.Common.Constants
 {
     public static class PaginationConstants
     {
-        public const int PageSize = 10;
+        public const int PageSize = 16;
         public const int PageStart = 1;
         public const string DefaultSortKey = "Id";
 

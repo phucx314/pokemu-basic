@@ -1,4 +1,5 @@
-﻿using PokEmuBasic.Application.Dtos.Responses;
+﻿using PokEmuBasic.Application.Dtos.Requests;
+using PokEmuBasic.Application.Dtos.Responses;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace PokEmuBasic.Application.Services.Interfaces
 {
     public interface IExpansionService
     {
-        Task<List<GetExpansionOptionsResponse>> GetExpansionOptionsAsync();
+        Task<(List<GetExpansionOptionsResponse> expansionOptions, int total)> GetExpansionOptionsAsync(GetExpansionOptionsRequest request);
     }
 }
