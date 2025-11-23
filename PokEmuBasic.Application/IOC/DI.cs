@@ -20,6 +20,7 @@ namespace PokEmuBasic.Application.IOC
             services.AddScoped<ICurrentUserContext, CurrentUserContext>();
             services.AddScoped<IPackService, PackService>();
             services.AddScoped<IExpansionService, ExpansionService>();
+            services.AddScoped<ICardService, CardService>();
 
             return services;
         }

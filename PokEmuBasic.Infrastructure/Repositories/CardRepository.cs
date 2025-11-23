@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PokEmuBasic.Application.Dtos.Requests;
 using PokEmuBasic.Application.Repositories;
 using PokEmuBasic.Domain.Entities;
+using PokEmuBasic.Domain.Extensions;
 using PokEmuBasic.Infrastructure.Database;
 using System;
 using System.Collections.Generic;
@@ -51,6 +53,38 @@ namespace PokEmuBasic.Infrastructure.Repositories
         public Task DeleteRangeAsync(IEnumerable<int> ids)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<(IEnumerable<Card?>? cards, int total)> GetCardListByExpansionAsync(GetCardListRequest request)
+        {
+            var query = _dbContext.Cards
+                .AsNoTracking();
+
+            if (!string.IsNullOrEmpty(request.SearchKey))
+            {
+                var searchKey = request.SearchKey.Trim().ToLower();
+
+                query = query.Where(c =>
+                    c.CardName.Contains(searchKey) // mấy cái HP với energy hay card type j j đó thì để filter riêng sau
+                );
+            }
+
+            if (request.ExpansionId.HasValue)
+            {
+                query = query.Where(c => c.ExpansionId == request.ExpansionId.Value);
+            }
+
+            var total = await query.CountAsync();
+
+            query = query.ApplySorting(request.SortBy, request.Direction);
+
+            var cards = await query
+                .WithoutDeleted()
+                .Skip((request.CurrentPage - 1) * 25)
+                .Take(25)
+                .ToListAsync();
+
+            return (cards, total);
         }
 
         public async Task<Card?> GetRandomCardByRarityAsync(int rarityId)

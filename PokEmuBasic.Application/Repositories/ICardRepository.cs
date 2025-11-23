@@ -1,4 +1,5 @@
-﻿using PokEmuBasic.Domain.Entities;
+﻿using PokEmuBasic.Application.Dtos.Requests;
+using PokEmuBasic.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,6 @@ namespace PokEmuBasic.Application.Repositories
     public interface ICardRepository : IRepository<Card>
     {
         Task<Card?> GetRandomCardByRarityAsync(int rarityId);
+        Task<(IEnumerable<Card?>? cards, int total)> GetCardListByExpansionAsync(GetCardListRequest request); ///
     }
 }

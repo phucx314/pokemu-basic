@@ -55,6 +55,16 @@ namespace PokEmuBasic.Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
+        public async Task<Expansion?> GetByIdAsync(int expansionId)
+        {
+            var expansion = await _dbContext.Expansions
+                .AsNoTracking()
+                .WithoutDeleted()
+                .FirstOrDefaultAsync(e => e.Id == expansionId);
+
+            return expansion;
+        }
+
         public async Task<(IEnumerable<Expansion> expansionOptions, int total)> GetExpansionsOptionsAsync(GetExpansionOptionsRequest request)
         {
             // common query
@@ -86,6 +96,17 @@ namespace PokEmuBasic.Infrastructure.Repositories
                 .ToListAsync();
 
             return (expansionOptions, total);
+        }
+
+        public async Task<Expansion?> GetLatestExpansionAsync()
+        {
+            var latestExpansion = await _dbContext.Expansions
+                .AsNoTracking()
+                .WithoutDeleted()
+                .OrderByDescending(e => e.ReleaseDate)
+                .FirstOrDefaultAsync();
+
+            return latestExpansion;
         }
 
         public Task UpdateAsync(Expansion entity)

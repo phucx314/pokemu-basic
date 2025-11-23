@@ -14,6 +14,7 @@ namespace PokEmuBasic.Application.Mapping
         public CardProfile()
         {
             CreateMap<Card, OpenCardResponse>();
+            CreateMap<Card, GetCardListResponse>();
         }
     }
 }

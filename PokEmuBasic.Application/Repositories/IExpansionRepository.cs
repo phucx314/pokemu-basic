@@ -11,5 +11,7 @@ namespace PokEmuBasic.Application.Repositories
     public interface IExpansionRepository : IRepository<Expansion>
     {
         Task<(IEnumerable<Expansion> expansionOptions, int total)> GetExpansionsOptionsAsync(GetExpansionOptionsRequest request);
+        Task<Expansion?> GetLatestExpansionAsync();
+        Task<Expansion?> GetByIdAsync(int expansionId);
     }
 }
