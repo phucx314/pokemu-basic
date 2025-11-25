@@ -87,6 +87,45 @@ namespace PokEmuBasic.Infrastructure.Repositories
             return (cards, total);
         }
 
+        public async Task<(IEnumerable<Card?>? cards, int total)> GetUserCardListByExpansionAsync(GetCardListRequest request, int? userId)
+        {
+            var query = _dbContext.Cards
+                .AsNoTracking();
+
+            if (userId.HasValue)
+            {
+                query = query.Where(c => c.UserCards.Any(uc => uc.UserId == userId));
+                // lấy thêm mấy cái ngày nhận với số lượng... bằng cách join cái bảng user cards vào
+                query = query.Include(c => c.UserCards.Where(uc => uc.UserId == userId));
+            }
+
+            if (!string.IsNullOrEmpty(request.SearchKey))
+            {
+                var searchKey = request.SearchKey.Trim().ToLower();
+
+                query = query.Where(c =>
+                    c.CardName.Contains(searchKey) // mấy cái HP với energy hay card type j j đó thì để filter riêng sau
+                );
+            }
+
+            if (request.ExpansionId.HasValue)
+            {
+                query = query.Where(c => c.ExpansionId == request.ExpansionId.Value);
+            }
+
+            var total = await query.CountAsync();
+
+            query = query.ApplySorting(request.SortBy, request.Direction);
+
+            var cards = await query
+                .WithoutDeleted()
+                .Skip((request.CurrentPage - 1) * 25)
+                .Take(25)
+                .ToListAsync();
+
+            return (cards, total);
+        }
+
         public async Task<Card?> GetRandomCardByRarityAsync(int rarityId)
         {
             int countCardWithRarity = await _dbContext.Cards

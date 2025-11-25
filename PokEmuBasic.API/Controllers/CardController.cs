@@ -37,5 +37,19 @@ namespace PokEmuBasic.API.Controllers
 
             return OkResponse(res, pagi, $"Get card lists of expansion '{expansionName}' successfully");
         }
+
+        [HttpGet("owned/list")]
+        public async Task<IActionResult> GetUserCardListByExpansionAsync([FromQuery] GetCardListRequest request)
+        {
+            var (res, total, expansionName) = await _cardService.GetUserCardListByExpansionAsync(request);
+
+            var pagi = new PaginationMetadata(
+                request.CurrentPage,
+                25,
+                total
+            );
+
+            return OkResponse(res, pagi, $"Get owned card lists of expansion '{expansionName}' successfully");
+        }
     }
 }

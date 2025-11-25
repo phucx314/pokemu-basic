@@ -11,5 +11,6 @@ namespace PokEmuBasic.Application.Services.Interfaces
     public interface ICardService
     {
         Task<(List<GetCardListResponse> cards, int total, string? expansionName)> GetCardListByExpansionAsync(GetCardListRequest request);
+        Task<(List<GetCardListResponse> cards, int total, string? expansionName)> GetUserCardListByExpansionAsync(GetCardListRequest request);
     }
 }
