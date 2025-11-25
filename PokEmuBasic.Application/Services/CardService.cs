@@ -33,6 +33,13 @@ namespace PokEmuBasic.Application.Services
             _mapper = mapper;
         }
 
+        public async Task<int> CountCardsInExpansion(int expansionId)
+        {
+            var res = await _cardRepository.CountCardsInExpansion(expansionId);
+
+            return res;
+        }
+
         public async Task<(List<GetCardListResponse> cards, int total, string? expansionName)> GetCardListByExpansionAsync(GetCardListRequest request)
         {
             var (cards, total) = await _cardRepository.GetCardListByExpansionAsync(request);

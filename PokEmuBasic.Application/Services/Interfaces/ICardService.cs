@@ -12,5 +12,6 @@ namespace PokEmuBasic.Application.Services.Interfaces
     {
         Task<(List<GetCardListResponse> cards, int total, string? expansionName)> GetCardListByExpansionAsync(GetCardListRequest request);
         Task<(List<GetCardListResponse> cards, int total, string? expansionName)> GetUserCardListByExpansionAsync(GetCardListRequest request);
+        Task<int> CountCardsInExpansion(int expansionId);
     }
 }

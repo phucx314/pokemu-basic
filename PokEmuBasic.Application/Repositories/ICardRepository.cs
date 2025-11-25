@@ -13,5 +13,6 @@ namespace PokEmuBasic.Application.Repositories
         Task<Card?> GetRandomCardByRarityAsync(int rarityId);
         Task<(IEnumerable<Card?>? cards, int total)> GetCardListByExpansionAsync(GetCardListRequest request);
         Task<(IEnumerable<Card?>? cards, int total)> GetUserCardListByExpansionAsync(GetCardListRequest request, int? userId);
+        Task<int> CountCardsInExpansion(int expansionId);
     }
 }

@@ -157,5 +157,14 @@ namespace PokEmuBasic.Infrastructure.Repositories
         {
             throw new NotImplementedException();
         }
+
+        public async Task<int> CountCardsInExpansion(int expansionId)
+        {
+            var count = await _dbContext.Cards
+                .Where(ex => ex.ExpansionId == expansionId)
+                .CountAsync();
+
+            return count;
+        }
     }
 }

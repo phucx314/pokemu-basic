@@ -43,13 +43,27 @@ namespace PokEmuBasic.API.Controllers
         {
             var (res, total, expansionName) = await _cardService.GetUserCardListByExpansionAsync(request);
 
+            if (request.ExpansionId == null || request.ExpansionId <= 0)
+            {
+                return BadRequest("ExpansionId is required.");
+            }
+            
+            var countExpansionSlots = await _cardService.CountCardsInExpansion(request.ExpansionId.Value);
+
+            var data = new
+            {
+                TotalCards = countExpansionSlots,
+                AcquiredCards = total,
+                Cards = res
+            };
+
             var pagi = new PaginationMetadata(
                 request.CurrentPage,
                 25,
                 total
             );
 
-            return OkResponse(res, pagi, $"Get owned card lists of expansion '{expansionName}' successfully");
+            return OkResponse(data, pagi, $"Get owned card lists of expansion '{expansionName}' successfully");
         }
     }
 }
