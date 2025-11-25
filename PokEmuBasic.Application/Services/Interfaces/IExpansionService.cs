@@ -11,5 +11,6 @@ namespace PokEmuBasic.Application.Services.Interfaces
     public interface IExpansionService
     {
         Task<(List<GetExpansionOptionsResponse> expansionOptions, int total)> GetExpansionOptionsAsync(GetExpansionOptionsRequest request);
+        Task<GetExpansionOptionsResponse> GetLatestExpansionAsync();
     }
 }

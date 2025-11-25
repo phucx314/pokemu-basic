@@ -40,5 +40,14 @@ namespace PokEmuBasic.Application.Services
 
             return (res, total);
         }
+
+        public async Task<GetExpansionOptionsResponse> GetLatestExpansionAsync()
+        {
+            var latestExpansion = await _expansionRepository.GetLatestExpansionAsync();
+
+            var res = _mapper.Map<GetExpansionOptionsResponse>(latestExpansion);
+
+            return res;
+        }
     }
 }

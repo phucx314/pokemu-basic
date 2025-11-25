@@ -39,5 +39,13 @@ namespace PokEmuBasic.API.Controllers
 
             return OkResponse(res, paginationMetadata, "Get expansion options successfully");
         }
+
+        [HttpGet("latest")]
+        public async Task<IActionResult> GetLatestExpansionAsync()
+        {
+            var res = await _expansionService.GetLatestExpansionAsync();
+
+            return OkResponse(res, "Get latest expansion successfully");
+        }
     }
 }
