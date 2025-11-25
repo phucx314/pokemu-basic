@@ -13,7 +13,6 @@ namespace PokEmuBasic.Application.Dtos.Requests
         public string? SearchKey { get; set; }
 
         public int? ExpansionId { get; set; }
-        public string? ExpansionName { get; set; } // cái này chỉ để phục vụ trả res cho controller thôi
 
         public override string SortBy { get; set; } = nameof(Card.ExpansionIndex);
         public override string Direction { get; set; } = PaginationConstants.ASCENDING;

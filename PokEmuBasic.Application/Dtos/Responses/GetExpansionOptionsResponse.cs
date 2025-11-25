@@ -10,6 +10,7 @@ namespace PokEmuBasic.Application.Dtos.Responses
     {
         public int Id { get; set; }
         public string ExpansionName { get; set; } = default!;
+        public string ExpansionCode { get; set; } = default!;
         public string ExpansionImage { get; set; } = default!;
     }
 }
