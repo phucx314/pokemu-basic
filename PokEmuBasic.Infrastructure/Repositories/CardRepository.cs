@@ -104,7 +104,7 @@ namespace PokEmuBasic.Infrastructure.Repositories
                 var searchKey = request.SearchKey.Trim().ToLower();
 
                 query = query.Where(c =>
-                    c.CardName.Contains(searchKey) // mấy cái HP với energy hay card type j j đó thì để filter riêng sau
+                    c.CardName.ToLower().Contains(searchKey) // mấy cái HP với energy hay card type j j đó thì để filter riêng sau
                 );
             }
 
